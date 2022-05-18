@@ -1,19 +1,22 @@
-# Скелет тестового проекта Junit5 + Cucumber + Spring + Allure
+# Junit5 + Cucumber + Spring + Allure + rest-assured
 
-## Требования к ПО разработчика
-* [OpenJDK11 Hotspot](https://adoptium.net/?variant=openjdk11&jvmVariant=hotspot)
+## 要求
+* [OpenJDK17 Hotspot](https://adoptium.net/?variant=openjdk11&jvmVariant=hotspot)
 * [Maven3](https://maven.apache.org/download.cgi)
 * [IntelliJ Cucumber support](https://www.jetbrains.com/help/idea/enabling-cucumber-support-in-project.html)
 
-## Запуск тестов
+## 运行测试
 ```
 mvn clean test
 ```
 
-## Генерация отчета
+## 生成报告
 ```
 mvn allure:serve
 ```
 
-## Управление количеством потоков
-Осуществляется в файле [junit-platform.properties](src/test/resources/junit-platform.properties)
+## extent report
+```
+target/cucumber/report.html
+```
+
