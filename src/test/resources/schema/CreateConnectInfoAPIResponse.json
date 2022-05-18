@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "default": {},
+  "title": "Root Schema",
+  "required": [
+    "code",
+    "message",
+    "success",
+    "result"
+  ],
+  "properties": {
+    "code": {
+      "type": "string",
+      "default": "",
+      "title": "The code Schema",
+      "examples": [
+        "00000"
+      ]
+    },
+    "message": {
+      "type": "string",
+      "default": "",
+      "title": "The message Schema",
+      "examples": [
+        "OK"
+      ]
+    },
+    "success": {
+      "type": "boolean",
+      "default": false,
+      "title": "The success Schema",
+      "examples": [
+        true
+      ]
+    },
+    "result": {
+      "type": "string",
+      "default": "",
+      "title": "The result Schema",
+      "examples": [
+        "92d88936c26549bbaa2a7b768d11a6e2"
+      ]
+    }
+  },
+  "examples": [{
+    "code": "00000",
+    "message": "OK",
+    "success": true,
+    "result": "92d88936c26549bbaa2a7b768d11a6e2"
+  }]
+}
