@@ -12,6 +12,8 @@ import io.restassured.specification.RequestSpecification;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.List;
 import java.util.stream.Collectors;
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchema;
@@ -133,8 +135,8 @@ public class CommonSteps {
     @Then("the response should contain")
     public void theResponseShouldContain(DataTable table) {
         table.asMaps().forEach(map -> {
-            String jsonPath = map.get("jsonPath").toString();
-            String value = map.get("value").toString();
+            String jsonPath = map.get("jsonPath");
+            String value = map.get("value");
             assertThat(response.jsonPath().getString(jsonPath))
                     .describedAs("The value of " + jsonPath + " is " + value + "incorrect")
                     .isEqualTo(value);
@@ -159,5 +161,16 @@ public class CommonSteps {
     public void responseBodyShouldMatchTheSchema(String schemaFile) {
         var schema = jsonParser.parseResponseSchemaJsonFromFile(schemaFile);
         response.then().assertThat().body(matchesJsonSchema(String.valueOf(schema)));
+    }
+
+    @And("I calls {string} with {string} http request with {string} field list")
+    public void iCallsWithHttpRequestWithField(String resource, String httpMethod, String jsonPath) {
+        var field = response.jsonPath().getString(jsonPath);
+        APIResources resourceAPI = APIResources.valueOf(resource);
+        response = requestSpecification
+                .when()
+                .log().all()
+                .body(List.of(field))
+                .request(httpMethod, resourceAPI.getResource());
     }
 }

@@ -21,15 +21,15 @@
         <maven.compile.target>${java.version}</maven.compile.target>
 
         <!--Dependencies Version -->
-        <spring-boot.version>2.6.7</spring-boot.version>
-        <junit-jupiter.version>5.8.2</junit-jupiter.version>
-        <cucumber-bom.version>7.2.3</cucumber-bom.version>
+        <spring-boot.version>2.7.0</spring-boot.version>
+        <junit-jupiter.version>5.9.0-M1</junit-jupiter.version>
+        <cucumber-bom.version>7.3.4</cucumber-bom.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M6</maven-surefire-plugin.version>
         <aspectj.version>1.9.9.1</aspectj.version>
-        <allure-cucumber7-jvm.version>2.17.3</allure-cucumber7-jvm.version>
+        <allure-cucumber7-jvm.version>2.18.0</allure-cucumber7-jvm.version>
         <allure-maven.version>2.11.2</allure-maven.version>
-        <extentreports.version>1.4.2</extentreports.version>
+        <extentreports.version>1.5.1</extentreports.version>
 <!--        <junit-jupiter.version>5.7.0</junit-jupiter.version>-->
 <!--        <junit-platform-launcher.version>1.7.0</junit-platform-launcher.version>-->
 <!--        <cucumber-java.version>5.7.0</cucumber-java.version>-->
@@ -38,7 +38,7 @@
         <!--Rest-assured Dependencies Version -->
         <rest-assured.version>5.0.1</rest-assured.version>
         <guava.version>31.1-jre</guava.version>
-        <jackson.version>2.13.2</jackson.version>
+        <jackson.version>2.13.3</jackson.version>
         <!-- control params -->
         <logLevel>INFO</logLevel>
     </properties>
@@ -133,17 +133,14 @@
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
             <artifactId>jackson-dataformat-yaml</artifactId>
-            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
-            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.13.2.2</version>
         </dependency>
         <dependency>
             <groupId>tech.grasshopper</groupId>
@@ -249,7 +246,7 @@
                 <version>${allure-maven.version}</version>
                 <configuration>
                     <reportVersion>${allure-cucumber7-jvm.version}</reportVersion>
-                    <allureDownloadUrl>https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/%s/allure-commandline-%s.zip</allureDownloadUrl>
+<!--                    <allureDownloadUrl>https://repo.maven.apache.org/maven2/io/qameta/allure/allure-commandline/%s/allure-commandline-%s.zip</allureDownloadUrl>-->
                 </configuration>
             </plugin>
         </plugins>
