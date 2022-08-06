@@ -1,0 +1,8 @@
+{
+  "parameters":"xxxxxx",
+  "description":"spring-test-generate",
+  "usage":"test",
+  "type":"API",
+  "name":"body",
+  "typeName":"API"
+}

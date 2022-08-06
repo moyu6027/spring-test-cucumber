@@ -1,8 +1,8 @@
 # language: en
-@smoke
-Feature: discovery test sample
 
-  Scenario: I wants to discover the snmp devices
+Feature: assets test sample
+
+  Scenario: I wants to manual create the snmp devices as asset
     Given I have a http request body from body.json
     When I calls "CreateConnectInfoAPI" with "POST" http request
     Then status code should be 200

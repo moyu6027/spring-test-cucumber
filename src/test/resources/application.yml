@@ -2,12 +2,12 @@
 server:
   application:
     name: InjectFromYAML
-    url: http://172.17.162.167:33201
+    url: http://xxxxxxx.com
     description: How To Inject a map from a YAML File in Spring Boot
   users:
     root:
       username: admin
-      password: 1595ba243877f93a57a975473b8e267c59e2da32297aee334d895af099089348
+      password: adminpassword
     guest:
       username: guest
       password: guestpass

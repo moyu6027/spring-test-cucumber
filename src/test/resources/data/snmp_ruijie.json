@@ -1,8 +1,0 @@
-{
-  "parameters":"634e17db4a27b0d33aa440f9f68c3d52eb67817eb8c7fd8c2463a0dc6f615657a40e33c11d60a259d30a9d4733cd5508e798f4f42c14373fd66dac26e5ffc7883c6e46e07f8eddf2bf416e8f0615074f",
-  "description":"spring-test-generate",
-  "usage":"collect",
-  "type":"SNMP",
-  "name":"snmp_ruijie",
-  "typeName":"SNMP"
-}

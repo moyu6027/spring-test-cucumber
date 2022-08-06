@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cn.qa.testing</groupId>
-    <artifactId>play-bdd-api-testing</artifactId>
+    <artifactId>spring-test-cucumber</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -27,16 +27,16 @@
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M6</maven-surefire-plugin.version>
         <aspectj.version>1.9.9.1</aspectj.version>
-        <allure-cucumber7-jvm.version>2.18.0</allure-cucumber7-jvm.version>
+        <allure-cucumber7-jvm.version>2.18.1</allure-cucumber7-jvm.version>
         <allure-maven.version>2.11.2</allure-maven.version>
-        <extentreports.version>1.5.1</extentreports.version>
+        <extentreports.version>1.7.0</extentreports.version>
 <!--        <junit-jupiter.version>5.7.0</junit-jupiter.version>-->
 <!--        <junit-platform-launcher.version>1.7.0</junit-platform-launcher.version>-->
 <!--        <cucumber-java.version>5.7.0</cucumber-java.version>-->
 <!--        <cucumber-junit.version>5.7.0</cucumber-junit.version>-->
 <!--        <junit-vintage-engine.version>5.7.0</junit-vintage-engine.version>-->
         <!--Rest-assured Dependencies Version -->
-        <rest-assured.version>5.0.1</rest-assured.version>
+        <rest-assured.version>5.1.1</rest-assured.version>
         <guava.version>31.1-jre</guava.version>
         <jackson.version>2.13.3</jackson.version>
         <!-- control params -->
@@ -151,7 +151,7 @@
         <dependency>
             <groupId>net.datafaker</groupId>
             <artifactId>datafaker</artifactId>
-            <version>1.3.0</version>
+            <version>1.4.0</version>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
